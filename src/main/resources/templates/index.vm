@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    #if(true)
+
+    #end
+    <center>
+    <table>
+    <tr>
+    <th>No</th>
+    <th>title</th>
+    <th>writer</th>
+    <th>hit</th>
+    </tr>
+    #foreach($item in $list)
+        <tr>
+            <td>
+            $item.articleId
+            </td>
+            <td>
+            $item.title
+            </td>
+            <td>
+            $item.writer
+            </td>
+            <td>
+            $item.v_count
+            </td>
+        </tr>
+    #end
+    </table>
+    </center>
+</body>
+</html>
